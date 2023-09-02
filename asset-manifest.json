@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.eb46530f.css",
+    "main.js": "/react-gh-pages/static/js/main.83517a44.js",
+    "static/media/BackgroundImage.png": "/react-gh-pages/static/media/BackgroundImage.bb2705f97468cf621271.png",
+    "static/media/MoneyHeist.jpeg": "/react-gh-pages/static/media/MoneyHeist.caad8376d4f29d3c271d.jpeg",
+    "static/media/MoneyHeistposter.jpeg": "/react-gh-pages/static/media/MoneyHeistposter.385a94f15d0d94f898cb.jpeg",
+    "static/media/Wednesday.jpeg": "/react-gh-pages/static/media/Wednesday.280622f6bcfbc9afc3d0.jpeg",
+    "static/media/Crash.jpg": "/react-gh-pages/static/media/Crash.6b88fcc9dd544f892c61.jpg",
+    "static/media/ZNMD.jpeg": "/react-gh-pages/static/media/ZNMD.dbfa9e6c950ba6b25973.jpeg",
+    "static/media/Shehzada.jpeg": "/react-gh-pages/static/media/Shehzada.0ebde25ad8810d5a328e.jpeg",
+    "static/media/YJHD.jpeg": "/react-gh-pages/static/media/YJHD.9e5d0024ac8169d4c344.jpeg",
+    "static/media/Celebrity.jpeg": "/react-gh-pages/static/media/Celebrity.d13f415bb81c87dd3e3d.jpeg",
+    "static/media/Youtube.png": "/react-gh-pages/static/media/Youtube.5b83386695a6cfeae944.png",
+    "static/media/KotaFactory.jpeg": "/react-gh-pages/static/media/KotaFactory.0c554b5e933a4ddfa39b.jpeg",
+    "static/media/Major.jpeg": "/react-gh-pages/static/media/Major.3e6ddc3ece675d5436f5.jpeg",
+    "static/media/MissionMajnu.jpeg": "/react-gh-pages/static/media/MissionMajnu.508d6b28516ba9092fc2.jpeg",
+    "static/media/Doctorg.jpeg": "/react-gh-pages/static/media/Doctorg.48db3552b1d8e31db2c3.jpeg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.eb46530f.css.map": "/react-gh-pages/static/css/main.eb46530f.css.map",
+    "main.83517a44.js.map": "/react-gh-pages/static/js/main.83517a44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb46530f.css",
+    "static/js/main.83517a44.js"
+  ]
+}
