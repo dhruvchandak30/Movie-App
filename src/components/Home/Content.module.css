@@ -1,0 +1,41 @@
+.Home {
+  color: white;
+  text-align: center;
+}
+
+.Home h1 {
+  font-size: 4rem;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.Home h3 {
+  font-size: 2rem;
+  margin-top: -15px;
+  letter-spacing: 1px;
+}
+
+.Home p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Home {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .Home h1 {
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .Home h3,
+  .Home p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+
+  }
+}

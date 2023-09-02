@@ -1,0 +1,95 @@
+.HeaderExtra img {
+  width: 2.5vw;
+}
+.HeaderExtra {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  margin-top: -100px;
+}
+
+.HeaderExtra button {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+.Account .Modal {
+  position: absolute;
+  top: 120%;
+  left: -2000%;
+  width: 15vw;
+  height: 15vw;
+  background-color: black;
+  opacity: 0.8;
+  border: 1px solid #ccc;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+.Account .Modal li {
+  align-items: center;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 5px 0px;
+  /* color: white; */
+  z-index: 10000;
+}
+
+.AccountInfo {
+  /* color: red; */
+}
+.Modal {
+  display: flex;
+  flex-direction: column;
+}
+.SignnOut {
+  color: red;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.Modal hr {
+  color: white;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.MediaSignOut {
+  display: none;
+}
+.SearchButton h1 {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .Notif {
+    display: none;
+  }
+  .Account {
+    display: none;
+  }
+  .BellIcon {
+    display: none;
+  }
+  .MediaSignOut hr {
+    position: relative;
+    width: 200vw;
+  }
+
+  .MediaSignOut {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    color: red;
+    margin-left: -113%;
+  }
+  .SearchButton {
+    position: relative;
+    top: 20%;
+    left: 200%;
+    color: white;
+    background-color: white;
+  }
+}

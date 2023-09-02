@@ -1,0 +1,10 @@
+.Error {
+  text-align: center;
+  font-size: 3rem;
+  background-color: rgb(255, 164, 164);
+}
+
+.Error h1 {
+  color: red;
+  font-size: 7rem;
+}

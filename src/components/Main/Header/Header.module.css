@@ -1,0 +1,54 @@
+.Header {
+  position: fixed;
+  color: white;
+  height: 4vw;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 100px;
+  /* background-color: rgba(30, 29, 29, 0.963); */
+}
+.BlackBackground {
+  background-color: rgba(30, 29, 29, 0.963);
+}
+.Header ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 20px;
+}
+.Header ul li {
+  margin-right: 15px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.Header ul img {
+  margin: -65px -45px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Header ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .Header ul li {
+    margin-top: 10px;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .Header {
+    position: relative;
+    height: 140vw;
+    width: 100%;
+    margin-left: -10px;
+    background-color: rgba(30, 29, 29, 0.963);
+  }
+  .SearchClick {
+    position: relative;
+    left: 10%;
+    width: 250px;
+    height: 120px;
+  }
+}

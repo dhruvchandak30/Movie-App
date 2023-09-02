@@ -1,0 +1,12 @@
+.MainPage {
+  background-color: rgba(30, 29, 29, 0.963);
+}
+
+@media only screen and (max-width: 768px) {
+  .MainPage {
+    overflow-x: hidden;
+    width: 100%;
+    /* background-color: black; */
+    background-color: rgba(30, 29, 29, 0.963);
+  }
+}

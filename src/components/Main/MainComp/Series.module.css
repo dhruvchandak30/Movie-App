@@ -1,0 +1,48 @@
+.Series img {
+  width: 250px;
+  height: 180px;
+  margin: 10px 10px;
+  border-radius: 5px;
+}
+.Series {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  margin: 10px 10px;
+}
+.DataList h1 {
+  margin-left: 10px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.Series::-webkit-scrollbar {
+  display: none;
+}
+.Carousel {
+  background-color: rgba(30, 29, 29, 0.963);
+  color: white;
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Series {
+    overflow-x: scroll;
+    background-color: rgba(30, 29, 29, 0.963);
+  }
+  .Series img {
+    height: 200px;
+    margin: 10px;
+  }
+  .DataList {
+    text-align: center;
+  }
+  .DataList h1 {
+    font-size: 2rem;
+    margin: 20px 10px;
+  }
+  .Carousel {
+    margin-top: -100px;
+    margin-left: 0px;
+    margin-bottom: -30px;
+  }
+}
