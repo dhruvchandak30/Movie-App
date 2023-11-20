@@ -6,6 +6,11 @@ import AwardWinning from "./AwardWinning";
 import Comedy from "./Comedy";
 import Horror from "./Horror";
 import Action from "./Action";
+import Romance from "./Romance";
+import Old from "./Old";
+import Adventure from "./Adventure";
+import BioGraphy from "./BioGraphy";
+import Drama from "./Drama";
 
 const Carousel = () => {
   return (
@@ -16,6 +21,11 @@ const Carousel = () => {
       <Comedy />
       <Horror />
       <Action />
+      <Romance />
+      <Old />
+      <Drama />
+      <Adventure />
+      <BioGraphy />
     </div>
   );
 };

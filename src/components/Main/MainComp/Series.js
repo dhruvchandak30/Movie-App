@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Series = () => {
   return (
     <div className={classes.DataList} id="ShowSeries">
-      <h1>Netflix Series</h1>
+      <h1>Web Series</h1>
       <div className={classes.Series}>
         {Data.map((item) => {
           if (parseInt(item.episodes) > 1) {

@@ -1,17 +1,19 @@
 footer {
-  /* background-color: black; */
-  color: grey;
+  background-color: rgb(24, 24, 24);
+  color: white;
   margin-bottom: -50px;
+  align-items: center;
+  justify-content: center;
 }
 footer li {
   list-style: none;
-  margin: 20px 5px;
+  margin: 10px 0px;
   cursor: pointer;
 }
 .list {
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
+  /* width: 50%; */
 }
 
 footer ul :hover {
@@ -24,8 +26,6 @@ footer .Icons img {
 }
 footer .Icons {
   margin-left: 170px;
-  margin-top: 30px;
-  margin-bottom: 30px;
   cursor: pointer;
 }
 footer button {
@@ -38,17 +38,17 @@ footer button {
 }
 footer .Copyright {
   margin-left: 170px;
-  margin: 30px 170px;
 }
 
 @media only screen and (max-width: 768px) {
   footer .list {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .list ul {
-    margin-top: -30px;
-    margin-left: 25px;
     text-align: center;
   }
 
@@ -57,6 +57,8 @@ footer .Copyright {
     font-size: 1.4rem;
     align-items: center;
     background-color: rgba(30, 29, 29, 0.963);
+    margin-top: 50px;
+    text-align: center;
   }
   footer .Copyright {
     margin-left: -0px;

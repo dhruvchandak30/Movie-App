@@ -5,12 +5,12 @@
 }
 .Content {
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 3%;
   z-index: 200;
 }
 .MainComp {
-  background-color: rgba(30, 29, 29, 0.963);
+  background-color: black;
 }
 .Content h3 {
   font-size: 2rem;

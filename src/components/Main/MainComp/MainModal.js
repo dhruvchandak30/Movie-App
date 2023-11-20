@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Data from "../Data";
 import classes from "./MainModal.module.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import back from "../../../images/Main-Page/BackButton.jpg";
 
 const MainModal = ({ id }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const navigate = useNavigate();
   const movie = Data.find((item) => item.id === id);
 
   if (!movie) {
@@ -12,9 +17,15 @@ const MainModal = ({ id }) => {
 
   return (
     <div className={classes.MainModal}>
-      <Link to="/main" className={classes.HomeLink}>
-        Go Back
-      </Link>
+      <div>
+        <button onClick={() => navigate(-1)} className={classes.HomeLink}>
+          <img
+            src={back}
+            alt="BackButton"
+            className={classes.BackButtonImage}
+          ></img>
+        </button>
+      </div>
       <div className={classes.MainContenttContent}>
         <div className={classes.image}>
           <img src={movie.img} alt={movie.movie} />

@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className={classes.Home}>
       <nav>
-        <img src={logo} alt="Netflix Logo" className="logo" />
+        <img src={logo} alt="Netflix Logo" className={classes.Loginlogo} />
         {showHome && <HomeContent />}
         <SignIn onShow={HomeContentDisplayHandler} onClose={HideHomeContentHandler} />
       </nav>

@@ -5,25 +5,27 @@
   width: 100%;
   z-index: 1000;
   margin-bottom: 100px;
-  /* background-color: rgba(30, 29, 29, 0.963); */
 }
 .BlackBackground {
-  background-color: rgba(30, 29, 29, 0.963);
+  background-color: black;
 }
 .Header ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .Header ul li {
-  margin-right: 15px;
-  font-size: 1.2rem;
-  font-weight: 400;
+  margin-right: 35px;
+  font-size: 1.4rem;
+  font-weight: 500;
   cursor: pointer;
 }
 .Header ul img {
   margin: -65px -45px;
+}
+.Headerlogo {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -40,15 +42,23 @@
   }
   .Header {
     position: relative;
-    height: 140vw;
+    height: 100%;
     width: 100%;
-    margin-left: -10px;
-    background-color: rgba(30, 29, 29, 0.963);
+    margin-bottom: 7rem;
   }
   .SearchClick {
     position: relative;
-    left: 10%;
+    /* left: 10%; */
     width: 250px;
     height: 120px;
+  }
+  .Separation {
+    display: block;
+    color: whitesmoke;
+    z-index: 100;
+  }
+  .Headerlogo {
+    display: block;
+    width: 110%;
   }
 }

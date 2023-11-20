@@ -1,8 +1,8 @@
-import logo from "../../../images/home-page/NetflixLogo.png";
 import HeaderExtra from "./HeaderExtra";
 import classes from "./Header.module.css";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../../../images/home-page/NetflixLogo.png";
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
 
@@ -74,21 +74,22 @@ const Header = () => {
   return (
     <nav
       className={`${classes.Header} ${
-        showHeader ? "" : classes.BlackBackground
+        showHeader ? "" : `${classes.BlackBackground} ${classes.Separation}`
       }`}
     >
-      <ul>
-        <img src={logo} alt="Netflix Logo" />
-        <li onClick={scrollTop}>Home</li>
-        <li onClick={showShowsHandler}>TV Shows</li>
-        <li onClick={showMoviesHandler}>Movies</li>
-        <li onClick={showSeriesHandler}>Series</li>
-        <li>My List</li>
-        <li onClick={SearchHandler} className={classes.SearchClick}>
-          Search
-        </li>
-        <HeaderExtra />
-      </ul>
+      <div>
+      </div>
+      <div>
+        <ul>
+        <img src={logo} alt="Netflix Logo" className={classes.Headerlogo} />
+          <li onClick={scrollTop}>Home</li>
+          <li onClick={showShowsHandler}>TV Shows</li>
+          <li onClick={showMoviesHandler}>Movies</li>
+          <li onClick={showSeriesHandler}>Series</li>
+          <li onClick={SearchHandler}>Search</li>
+        </ul>
+        <hr className="Separation"></hr>
+      </div>
     </nav>
   );
 };

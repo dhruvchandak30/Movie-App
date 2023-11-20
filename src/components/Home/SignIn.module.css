@@ -12,6 +12,6 @@
 
 @media only screen and (max-width: 768px) {
   .SignInButton {
-    transform: translate(-60%, -1580%);
+    transform: translate(-60%, -1480%);
   }
 }

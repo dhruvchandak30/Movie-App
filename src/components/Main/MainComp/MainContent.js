@@ -8,7 +8,6 @@ const MainContent = () => {
   };
   return (
     <div className={classes.Content}>
-      <h3>NETFLIX SERIES</h3>
       <h1>MONEY HEIST</h1>
       <div className={classes.Buttons}>
         <button className={classes.play} onClick={playHeist}>

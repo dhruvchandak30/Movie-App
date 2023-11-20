@@ -36,9 +36,8 @@
   /* color: white; */
   z-index: 10000;
 }
-
-.AccountInfo {
-  /* color: red; */
+.MoreInfo{
+  color: white;
 }
 .Modal {
   display: flex;

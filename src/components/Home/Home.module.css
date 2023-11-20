@@ -6,11 +6,17 @@
   height: 105vh;
   margin-top: -25px;
 }
+.Loginlogo {
+  width: 15%;
+}
 
 @media only screen and (max-width: 768px) {
   .Home {
     background-repeat: no-repeat;
     width: 100%;
     overflow: hidden;
+  }
+  .Loginlogo {
+    width: 50%;
   }
 }

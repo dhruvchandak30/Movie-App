@@ -9,8 +9,6 @@ const Movie = () => {
 
   useEffect(() => {
     const id = localStorage.getItem("Email");
-    console.log(id);
-    console.log(typeof id);
     if (id === null) {
       navigate("/");
     }

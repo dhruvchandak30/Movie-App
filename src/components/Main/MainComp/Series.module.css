@@ -3,12 +3,14 @@
   height: 180px;
   margin: 10px 10px;
   border-radius: 5px;
+  border: 3px solid gray;
 }
 .Series {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
   margin: 10px 10px;
+  
 }
 .DataList h1 {
   margin-left: 10px;
@@ -19,7 +21,7 @@
   display: none;
 }
 .Carousel {
-  background-color: rgba(30, 29, 29, 0.963);
+  background-color: black;
   color: white;
   margin-left: 50px;
 }

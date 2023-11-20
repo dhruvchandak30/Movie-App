@@ -32,12 +32,8 @@ const HeaderExtra = () => {
       </div>
       <div className={classes.Account}>
         <button onClick={handleAccountButtonClick}>
-          <div>
-            <img
-              src={AccountImg}
-              alt="AccountImg"
-              className={classes.AccountImg}
-            />
+          <div className="MoreInfo">
+            <h4>MoreInfo</h4>
           </div>
         </button>
         {showModal && (

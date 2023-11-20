@@ -8,6 +8,7 @@ const MainPage = () => {
     <div className={classes.MainPage}>
       <Header />
       <MainComp />
+      <hr></hr>
       <Footer />
     </div>
   );

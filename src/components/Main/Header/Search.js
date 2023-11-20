@@ -1,36 +1,45 @@
 import React, { useState } from "react";
-import Data from "../Data";
 import classes from "./Search.module.css";
 import { Link } from "react-router-dom";
-
-const Search = () => {
-  const [inputValue, setInputValue] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
-
-  const InputChangeHandler = (event) => {
-    const newValue = event.target.value;
-    setInputValue(newValue);
-
-    if (newValue.trim() === "") {
-      setSearchResults([]);
-    } else {
-      const filteredResults = Data.filter((item) => {
-        const lowerCasedInput = newValue.toLowerCase();
-        const lowerCasedMovie = item.movie.toLowerCase();
-        const lowerCasedCast = item.cast.map((c) => c.toLowerCase());
-        const lowerCasedGenre = item.genre.map((g) => g.toLowerCase());
-
-        return (
-          lowerCasedMovie.startsWith(lowerCasedInput) ||
-          lowerCasedCast.some((c) => c.startsWith(lowerCasedInput)) ||
-          lowerCasedGenre.some((g) => g.startsWith(lowerCasedInput))
-        );
-      });
-
-      setSearchResults(filteredResults);
-    }
+function MoviePosterSearch() {
+  const [film, setFilm] = useState("");
+  const [movieDetails, setMovieDetails] = useState(null);
+  const handleInputChange = (event) => {
+    setFilm(event.target.value);
   };
 
+  const searchPoster = () => {
+    if (film === "") {
+      alert("Please enter a movie title.");
+      return;
+    }
+
+    const apiKey = "665b1fb7c3697a49e8d4ed8c838c009d";
+    const baseUrl = "https://api.themoviedb.org/3";
+
+    fetch(`${baseUrl}/search/movie?api_key=${apiKey}&query=${film}`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.results && data.results.length > 0) {
+          const firstResult = data.results[0];
+
+          const movieId = firstResult.id;
+          fetch(`${baseUrl}/movie/${movieId}?api_key=${apiKey}`)
+            .then((response) => response.json())
+            .then((details) => {
+              setMovieDetails(details);
+            })
+            .catch((error) => {
+              console.error("Error fetching movie details:", error);
+            });
+        } else {
+          alert("No results found for your search.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  };
   return (
     <div className={classes.SearchComponent}>
       <div>
@@ -38,26 +47,38 @@ const Search = () => {
           Go Back
         </Link>
       </div>
-      <div>
-        <input
-          placeholder="Search for Movies, Series, Cast, Genre"
-          onChange={InputChangeHandler}
-          value={inputValue}
-        />
-        <ul className={classes.SearchResults}>
-          {searchResults.map((item) => (
-            <Link
-              key={item.id}
-              className={classes.SearchResultItem}
-              to={`/movie/${item.id}`}
-            >
-              <img src={item.img} alt={item.movie}></img>
-            </Link>
-          ))}
-        </ul>
+      <div className={classes.SearchComponent}>
+        <div id="fetch" className={classes.SearchComponent}>
+          <input
+            type="text"
+            placeholder="Enter movie title here"
+            id="term"
+            value={film}
+            onChange={handleInputChange}
+          />
+          <button id="search" onClick={searchPoster}>
+            Search
+          </button>
+        </div>
+        <div id="poster">
+          {movieDetails && (
+            <div className={classes.MovieResults}>
+              <p>
+                Your search found: <strong>{film}</strong>
+              </p>
+              <img
+                src={`http://image.tmdb.org/t/p/w500/${movieDetails.poster_path}`}
+                alt={film}
+                className={classes.ResultMovieImage}
+              />
+              <p>Overview: {movieDetails.overview}</p>
+              <p>Release Date: {movieDetails.release_date}</p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
-};
+}
 
-export default Search;
+export default MoviePosterSearch;

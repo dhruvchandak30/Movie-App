@@ -20,16 +20,6 @@ const Footer = () => {
           <li>Legal Notices</li>
         </ul>
         <ul>
-          <li>Help Centre</li>
-          <li>Jobs</li>
-          <li>Cookie Preferences</li>
-        </ul>
-        <ul>
-          <li>Gift Cards</li>
-          <li>Terms of Use</li>
-          <li>Corporate Information</li>
-        </ul>
-        <ul>
           <li>Media Centre</li>
           <li>Privacy</li>
           <li>Contact Us</li>
@@ -37,7 +27,7 @@ const Footer = () => {
       </div>
       <div className={classes.Copyright}>
         <button>Service Code</button>
-        <h6>&copy; 1997-2023 Netflix,Inc</h6>
+        <h6>&copy; 1997-2023 Movies,Inc</h6>
       </div>
     </footer>
   );
